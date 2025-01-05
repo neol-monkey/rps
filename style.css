@@ -1,0 +1,160 @@
+
+@font-face {
+    font-family: "JetBrains Sans";
+    src: url("Fonts/JetBrainsSans[wght].woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometos Rounded";
+    src: url("Fonts/Geometos Rounded.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #0D1821;
+    color: white;
+    font-family: "JetBrains Sans", serif;
+    padding-bottom: 100px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.move-icon{
+    height: 50px;
+}
+
+.move-button{
+    background-color: transparent;
+    border: 3px solid white;
+    height: 100px;
+    width: 100px;
+    border-radius: 999999px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.move-button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.move-button:active{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.css-result{
+    font-size: 30px;
+    text-align: center;
+}
+
+.moves, .score-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.move{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.move img, .move p{
+    display: block;
+}
+
+
+.scoreboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 10px 100px rgba(255, 255, 255, 0.1);
+}
+
+.wins, .ties, .losses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    flex: 1;
+}
+
+.wins-score, .ties-score, .losses-score{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wins p, .ties p, .losses p{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.wins{
+    background-color: #1B998B;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 10px 40px rgba(27, 153, 139, 0.2);
+}
+
+.ties{
+    background-color: #F4C95D;
+    box-shadow: 0 10px 40px rgba(244, 201, 93, 0.2);
+}
+
+.losses{
+    background-color: #F95738;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 10px 40px rgba(249, 87, 56, 0.2);
+}
+
+.score-section{
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.reset{
+    background-color: #3772FF;
+    border: none;
+    border-radius: 500px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 40px rgba(55, 114, 255, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.reset:hover{
+    transform: rotate(-360deg);
+}
+
+.reset:active{
+    transition: 0.3s;
+    opacity: 0.8;
+}
